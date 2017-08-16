@@ -1,0 +1,29 @@
+<project>
+
+    <modelVersion>4.0.0</modelVersion>
+    <name>withSelenium</name>
+    <groupId>companyB</groupId>
+    <artifactId>withSelenium</artifactId>
+    <packaging>pom</packaging>
+    <version>2.1.1</version>
+    <properties>
+        <selenium.version>2.47.1</selenium.version>
+        <ghostdriver.version>1.1.0</ghostdriver.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.detro.ghostdriver</groupId>
+            <artifactId>phantomjsdriver</artifactId>
+            <version>${ghostdriver.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
