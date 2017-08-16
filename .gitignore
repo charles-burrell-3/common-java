@@ -1,0 +1,8 @@
+./.idea
+**/.idea
+**/*.iml
+**/target
+git_tagger.py
+settings.xml
+process_flow.txt
+*.versionsBackup
