@@ -69,8 +69,9 @@ class ConverterFunctionsMappings
     @SuppressWarnings("ConstantConditions")
     private void populateBooleanFunctions(List<String>trueValues, List<String>falseValues)
     {
-        converterFunctionsMappings.put(Boolean.class,(value)-> trueValues.contains(toLower(value)) ? true : falseValues.contains(toLower(value)) ? false : null);
-        converterFunctionsMappings.put(boolean.class,(value)-> trueValues.contains(toLower(value)) ? true : falseValues.contains(toLower(value)) ? false : null);
+        Arrays.asList(boolean.class, Boolean.class).forEach(_class ->
+                converterFunctionsMappings.put(_class, (value) ->
+                        trueValues.contains(toLower(value)) ? true : falseValues.contains(toLower(value)) ? false : null));
     }
 
     private String toLower(String value)

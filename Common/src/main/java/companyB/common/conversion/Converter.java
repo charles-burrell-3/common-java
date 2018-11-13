@@ -61,6 +61,10 @@ public class Converter
     private final Logger LOGGER = LoggerFactory.getLogger(Converter.class);
     private final List<Class> numberClasses;
     private final Map<Class,Function<String,Object>>converterFunctionsMappings;
+
+    /**
+     * Default constrictor for class.
+     */
     public Converter()
     {
         final ConverterValues converterValues = ConverterValues.getInstance();

@@ -30,11 +30,20 @@ public enum  EncryptionAlgs
      * @see org.apache.commons.codec.digest.DigestUtils#sha256Hex(String)
      **/
     SHA256(DigestUtils::sha256Hex),
+
+    /**
+     * SHA384 Algo.
+     * @see org.apache.commons.codec.digest.DigestUtils#sha384Hex(String)
+     **/
+    SHA384(DigestUtils::sha384Hex),
+
     /**
      * SHA512 Algo.
      * @see org.apache.commons.codec.digest.DigestUtils#sha512Hex(String)
      **/
     SHA512(DigestUtils::sha512Hex);
+
+
     public final Function<String,String>encryptionFunction;
 
     EncryptionAlgs(Function<String,String>encryptionFunction)

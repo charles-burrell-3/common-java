@@ -6,17 +6,6 @@ This package contains reusable components for consumption by other modules and a
 ## Top Level Packages
 The following are the top-level packages within this project:
 
-### AtomicOptional
-
-#### Concept
-`companyB.common.atomic.AtomicOptional` is class for holding Optional containers whose contents may change but whose basic contract will not. In other words, immutability for the Optional itself is guaranteed, but not that of its value.
-
-#### Usage
-```java
-    AtomicOptional<List<Integer>>atomicOptional = new AtomicOptional<>(Arrays.asList(1,2,3));
-    Optional<List<Integer>>actual = atomicOptional.get();
-    List<Intger> list = actual.get();
-```
 ### Conversion
 
 #### Concept
